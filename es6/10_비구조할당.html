@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const dog = { name:'치와와', age:3 }
+        
+        //객체 = {키:값, 키:값}
+        //객체.키 , 객체['키']
+        
+        // console.log(dog.name , dog.age )
+
+        //비구조할당, 구조분해 할당
+       /*  const { name , age } = dog
+        console.log(name,age)
+ */
+        const data = {
+            id : 1,
+            name : '홍길동',
+            addr : '서울',
+            age : 20
+        }
+        
+        console.log( data.id, data.name, data.addr, data.age)
+
+
+
+        // const { 키, 키, 키} = 객체
+
+        const {id, name, addr, age} = data
+        console.log(id, name, addr, age)
+
+    </script>
+</body>
+</html>

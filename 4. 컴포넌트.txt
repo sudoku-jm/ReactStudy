@@ -1,0 +1,13 @@
+컴포넌트
+
+첫 글자 : 대문자
+Header, HeaderTitle
+
+javascript 함수와 유사하다.
+
+npm start   ( yarn start ) : 서버실행
+
+JSX?
+HTML과 유사, 작업이 용이해서 만들었다.
+Javascript객체다.
+

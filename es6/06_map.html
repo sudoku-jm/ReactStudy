@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 반복문
+        // react 함수영역 : for , while, map
+        // JSX 영역 : map
+        const arr = [10,20,30,40]
+    
+        arr.map( (item , index) => {
+            return ( console.log(index , item) )
+        } )
+
+        console.log('================================================')
+        
+        //결과 값이 1개 일 때
+        arr.map( (item, index) => console.log(index ,item) )
+
+        //기존 for, for in, for of
+       /*  for( let i = 0; i < arr.length; i++ ){
+            console.log(i)
+        }
+         */
+       /*  for( let item in arr ){ // index를 뽑아줌
+            console.log( item )
+        } */
+       /*  for( let item of arr ){ //값을 뽑아줌
+            console.log(item)       
+        } */
+
+        console.log('================================================')
+        
+
+        // 배열객체
+        const data = [
+            {id:1,name:'이익준',age:30},
+            {id:2,name:'이익순',age:20},
+            {id:3,name:'이우주',age:5},
+            {id:4,name:'이동희',age:25},
+            {id:5,name:'채송화',age:28}
+        ]
+
+
+        data.map( (item, index) => {
+            console.log(item.id, item.name, item.age)
+        } )
+        console.log('================================================')
+        data.map( (item,index) => console.log(item['id'],item['name'], item['age']))
+
+
+
+
+    </script>
+</body>
+</html>

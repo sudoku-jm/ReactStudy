@@ -1,0 +1,14 @@
+npx create-react-app 프로젝트명
+
+cd 프로젝트명
+
+npm start (or yarn start - 실행)
+
+중단 : ctrl + c
+---
+파일 들고갈 때 ? 용량이 크니 node_modules 제외한 파일만 들고간다.
+---
+node_modules 제외 하고 가져가서 
+해당 폴더 터미널이동.
+yarn 또는 npm i 
+node_modules 생성이 된다.

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       const arr = ['강아지','고양이','토끼']
+       const arr1 = arr.concat()    //복사용
+       const arr2 = [ ...arr ]       //arr의 값이 들어옴
+       console.log( arr )
+       console.log( arr1 )
+       console.log( arr2 )
+       console.log('==================================')
+       
+       //새로운 데이터 내용 추가
+       const arr3 = arr.concat('호랑이','소','말')
+       const arr4 = [...arr,'뱀','악어','치타']
+       console.log( arr3 )
+       console.log( arr4 )
+       console.log('==================================')
+       
+       const dog = {name:'치와와', age:3}
+       const dog1 = {
+           ...dog , 
+           // key 값을 다시 쓰면 값이 수정된다.
+           name : '이익준',        // 값 갱신
+           age : 30                // 값 갱신
+        }
+        console.log(dog1)   //객체 안에 있는 key값 복사
+        
+        
+        console.log('==================================')
+        // 배열객체
+        const data = [
+            {id:1,name:'이익준',age:30},
+            {id:2,name:'이익순',age:20},
+            {id:3,name:'이우주',age:5},
+            {id:4,name:'이동희',age:25},
+            {id:5,name:'채송화',age:28}
+        ]
+        
+        //concat 으로 추가
+        const data1 = data.concat({id:6,name:'홍길동',age:20})
+        console.log(data1)
+        console.log('==================================')
+        
+        // 스프레드 연산자로 추가
+        const data2 = [
+            ...data ,    //copy!
+            //추가
+            {
+                id : 7,
+                name : '강호동',
+                age : 35
+            }
+        ]
+        console.log(data2)        
+        console.log('==================================')
+
+
+        //수정
+        const data3 = data.map( (item, index) => {
+            //map에선 return 값이 존재한다.
+            if(item.id === 3){  //id:3 에 해당하는 것만
+                //그냥 출력하면 undefined
+                //수정          
+                return{
+                    ...item,     // 카피
+                    //id:3에 해당하는 내용 수정.
+                    name : '이승기',
+                    age : 25
+                    
+                }
+            }else{
+                return item     //id:3 이외의 값은 리턴
+            }
+        } )
+        console.log(data3)
+        
+        console.log('==================================')
+        
+        //if문을 안쓰고 삼항연산자 이용
+        const data4 = data.map( (item,index) => item.id === 1 ? {...item,name:'차학연',age:'29'} : item )
+        console.log(data4)
+
+
+        console.log('==================================')
+        console.log('================new Set============')
+        /* 
+            new Set() 동일한 값을 하나로 만들어 줌
+        */
+        const data5 = ['이승기','이효리','강호동','이효리','유재석','이효리','고민시']
+        const data6 = [...new Set(data5)]   //중복 시 하나로 만들어 줌
+        console.log(data6)  //['이승기', '이효리', '강호동', '유재석', '고민시'] 으로 출력
+        
+    </script>
+</body>
+</html>

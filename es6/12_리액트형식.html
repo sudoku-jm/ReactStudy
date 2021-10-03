@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title> test </title>
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+</head>
+<body>
+<div id="root" >화면에보일부분</div>
+    <script type="text/babel">
+        
+            
+        const title = '제목입니다.'
+        const name = '홍길동'
+        const age = 20
+        const addr = '서울'
+
+        // JSX
+        /* {}블럭 안에 넣어야 값이 나온다 */
+        
+        const el = (
+            <div>
+                <h2> {title} </h2>  
+                <ul>
+                    <li> 이름 : {name} </li>
+                    <li> 나이 : {age} </li>
+                    <li> 주소 : {addr} </li>
+                </ul>
+            </div>
+        )
+
+        /* 
+        원래는 이렇게 썼었어야 했지만
+        "use strict";
+    
+        React.createElement("div", null, React.createElement("h2", null, " ", title, " "), React.createElement("ul", null, React.createElement("li", null, " \uC774\uB984 : ", name, " "), React.createElement("li", null, " \uB098\uC774 : ", age, " "), React.createElement("li", null, " \uC8FC\uC18C : ", addr, " ")));
+
+
+        JSX영역에 쓰면 babel을 이용하면 리액트에서는 컴파일해준다.
+        */
+
+       
+        const dom = document.querySelector('#root')
+        ReactDOM.render(el , dom)
+
+    </script>
+</body>
+</html>

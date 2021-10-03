@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title> test </title>
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+</head>
+<body>
+<div id="root" >화면에보일부분</div>
+    <script type="text/babel">
+
+    //React.createElement('요소',속성,값)
+
+    const el = React.createElement('h1',{},'제목입니다.')   //엘리먼트(컴포넌트) 생성
+    const dom = document.querySelector('#root')             // dom선택(컨테이너)
+    ReactDOM.render( el, dom )                              //뿌려주기 render(컴포넌트,컨테이너)
+
+    // rendering : 코드가 눈으로 볼 수 있도록 그려지는 것을 렌더링
+    // render : 화면에 그려줌
+
+    </script>
+</body>
+</html>
