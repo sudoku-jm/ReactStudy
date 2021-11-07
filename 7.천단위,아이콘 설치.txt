@@ -1,0 +1,34 @@
+npm install numeral ( yarn add numeral ) : 천단위
+
+yarn add react-icons (npm install react-icons --save) : 아이콘
+
+yarn add moment  ( npm install moment --save ) : 날짜형식
+
+​
+
+import Numeral from "numeral";
+
+Numeral(xxx).format(0,0)
+
+​
+
+icons 
+바로가기 : https://react-icons.github.io/react-icons/icons?name=fa
+
+​
+
+1000단위
+바로가기 : http://numeraljs.com/
+
+​
+
+날짜형식 
+바로가기 : https://momentjs.com/
+
+​
+예제 참고사이트 
+https://kobis.or.kr/kobis/business/main/main.do
+
+​
+
+​
