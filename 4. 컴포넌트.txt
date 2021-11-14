@@ -1,4 +1,4 @@
-컴포넌트
+﻿컴포넌트
 
 첫 글자 : 대문자
 Header, HeaderTitle
@@ -6,8 +6,30 @@ Header, HeaderTitle
 javascript 함수와 유사하다.
 
 npm start   ( yarn start ) : 서버실행
-
+======================================================
 JSX?
 HTML과 유사, 작업이 용이해서 만들었다.
 Javascript객체다.
 
+https://ko.reactjs.org/docs/introducing-jsx.html
+
+======================================================
+#props
+
+React 컴포넌트의 단방향 데이터 흐름.
+
+props 는 properties 의 줄임말
+
+
+부모 컴포넌트에서자식 컴포넌트에 값을 전달할때 
+
+자식 컴포넌트에서 부모의 값을 받아올때 
+
+​
+
+
+React 컴포넌트는 상위 컴포넌트에서 하위 컴포넌트로 데이터(props)가 흐릅니다. 하위 컴포넌트는 전달 받은 props를 읽기만 가능하고, 쓸 수 없습니다. (READONLY)
+
+​
+
+https://ko.reactjs.org/docs/components-and-props.html

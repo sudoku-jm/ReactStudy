@@ -1,0 +1,9 @@
+axios 는 yarn add axios 로 설치
+
+import axios from 'axios'
+
+​
+
+fetch 는 자바스크립트에서 지원해줌
+
+​https://developer.mozilla.org/ko/docs/Web/API/Fetch_API/Using_Fetch

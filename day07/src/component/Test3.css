@@ -1,0 +1,4 @@
+.wrap{width:600px;margin:auto;padding:20px;border:1px solid #000;display:flex;flex-wrap: wrap;}
+.box{width:200px;height:200px;border:1px solid red;margin:10px;background: pink;}
+.size{width:150px;height:150px;margin: 20px;}
+.bg{background: skyblue;}
