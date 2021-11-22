@@ -1,6 +1,8 @@
 import React from 'react';
 import './assets/css/reset.css'
-import Todos from './todos/Todos';
+import Friends from './friends/Friends';
+// import Movies from './movie/Movies';
+// import Todos from './todos/Todos';
 // import UseEffect from './components/UseEffect';
 // import IconDate from './components/IconDate';
 
@@ -10,7 +12,9 @@ const App = () => {
     <div>
       {/* <IconDate/> */}
       {/* <UseEffect/> */}
-      <Todos/>
+      {/* <Todos/> */}
+      {/* <Movies/> */}
+      <Friends/>
     </div>
   );
 };
