@@ -1,0 +1,4 @@
+.list li{display:flex;justify-content: space-between; padding:10px 4px;border-bottom:1px dashed #e4e4e4;}
+.list li.on span+em{text-decoration: line-through;}
+.list li *{cursor: pointer;}
+.list li button {background:rgb(204, 204, 204);border:1px solid #e5e5e5;color:rgb(72, 72, 72);}
