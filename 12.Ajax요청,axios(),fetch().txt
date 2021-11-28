@@ -1,0 +1,137 @@
+yarn add sass 
+
+yarn add styled-components
+
+yarn add styled-reset
+
+yarn add axios
+
+yarn add react-masonry-css
+
+또는
+
+yarn add sass styled-components axios
+
+----------------------------------------------------
+
+​
+
+axios 는 yarn add axios 로 설치
+
+import axios from 'axios'
+
+​
+
+fetch 는 자바스크립트에서 지원해줌
+
+​https://developer.mozilla.org/ko/docs/Web/API/Fetch_API/Using_Fetch
+
+​
+
+​
+
+​
+
+구별
+
+js파일 -> import AAA from './경로/파일명'
+
+--------------------------
+
+export default [
+
+{
+
+id: 1, 
+
+name: '홍길동', 
+
+age: 20, 
+
+addr:'서울' 
+
+}
+
+]
+
+---------------------------
+
+​
+
+json파일 -> 내부에서 불러오기 import AAA from './경로/파일명.json'
+
+--------------------------
+
+[
+
+{
+
+"id": 1, 
+
+"name": "홍길동", 
+
+"age": 20, 
+
+"addr":"서울" 
+
+}
+
+]
+
+​
+
+서버에 올려진 json 파일 가져오기 - axios, fecth
+
+​
+
+​
+
+json 제공사이트​
+
+https://jsonplaceholder.typicode.com
+
+​https://jsonplaceholder.typicode.com/posts
+
+​
+
+검색
+
+https://hn.algolia.com/
+
+http://hn.algolia.com/api/v1/search?query=검색어
+
+​
+
+뉴스
+
+https://newsapi.org/register​
+
+https://newsapi.org/s/south-korea-news-api
+
+​
+
+ 
+
+sample - gallery폴더 - Gallery/GallerySearch/GalleyList/GalleryItem
+
+- styled폴더 - Global.js / pixastyle.js
+
+- index.js
+
+-------
+​reset 설치
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+font-family: 'Noto Sans KR', sans-serif;
+​-------
+
+pixabay
+
+https://pixabay.com/api/docs/
+
+​
+
+pinterest 유형 메이슨리 
+
+https://www.npmjs.com/package/react-masonry-css

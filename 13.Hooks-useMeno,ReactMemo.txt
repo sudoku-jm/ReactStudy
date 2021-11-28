@@ -1,0 +1,11 @@
+# Hooks - useMemo / React.memo
+
+성능최적화
+
+
+useMemo
+https://ko.reactjs.org/docs/hooks-reference.html#usememo
+
+
+React.memo
+https://ko.reactjs.org/docs/react-api.html#reactmemo

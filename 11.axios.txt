@@ -1,8 +1,8 @@
-axios 는 yarn add axios 로 설치
+axios 는 yarn add axios 로 설치.
+axios 사용하려면 설치해야한다~!
 
 import axios from 'axios'
 
-​
 
 fetch 는 자바스크립트에서 지원해줌
 

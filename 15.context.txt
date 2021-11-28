@@ -1,0 +1,6 @@
+[그림 context1.jpg]
+[그림 context2.jpg]
+react-props : props 단계가 너무 길어지면 관리하기 힘들다
+ContextAPI : context라는 전역 데이터 관리하는 저장소를 만들어서 데이터를 전달하고 받는다.
+
+
